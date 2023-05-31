@@ -40,5 +40,6 @@ queenNSquare = squareN.under(queenN)
 queenSquare = square.under(queen)
 
 fila1 = rockNsquare.join(knightNsquareN).join(bishopNsquare).join(queenNSquare).join(kingNSquare).join(bishopNsquareN).join(knightNsquare).join(rockNsquareN)
+fila2 = (peonNsquareN.join(peonNsquare)).horizontalRepeat(4)
 
-draw(fila1)
+draw(fila1.up(fila2))
