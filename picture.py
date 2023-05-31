@@ -52,7 +52,7 @@ class Picture:
         la cantidad de veces que indique el valor de n """
     image = []
     for i in range(0, len(self.img)):
-        image.extend([self.img[i]] * n)
+        image.append(self.img[i] * n)
     return Picture(image)
 
   def verticalRepeat(self, n):
