@@ -21,3 +21,14 @@ knightNsquareN = squareN.under(knightN)
 bishopNsquareN = squareN.under(bishopN)
 peonNsquareN = squareN.under(peonN)
 
+#Figuras blancas en cuadrados claros
+rockSquare = square.under(rock)
+knightSquare = square.under(knight)
+bishopSquare = square.under(bishop)
+peonSquare = square.under(pawn)
+
+#Figuras blancas en cuadrados oscuros
+rockSquareN = squareN.under(rock)
+knightSquareN = squareN.under(knight)
+bishopSquareN = squareN.under(bishop)
+peonSquareN = squareN.under(pawn)
