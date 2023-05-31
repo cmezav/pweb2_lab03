@@ -1,10 +1,9 @@
 from interpreter import draw
 from chessPictures import *
 
-line1 = square.join(square.negative()).horizontalRepeat(4)
-line2 = square.negative().join(square).horizontalRepeat(4)
+image = Picture(square.negative().img + square.img)
+image2 = image.verticalRepeat(2)
 
-final = line1.up(line2)
+draw(image2)
 
-draw(final)
 
