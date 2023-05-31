@@ -39,6 +39,6 @@ kingSquare = squareN.under(king)
 queenNSquare = squareN.under(queenN)
 queenSquare = square.under(queen)
 
-fila1 = rockNsquare.join(knightNsquareN).join(bishopNsquare).join(queenNSquare)
+fila1 = rockNsquare.join(knightNsquareN).join(bishopNsquare).join(queenNSquare).join(kingNSquare).join(bishopNsquareN).join(knightNsquare).join(rockNsquareN)
 
 draw(fila1)
