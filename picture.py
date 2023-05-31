@@ -45,7 +45,18 @@ class Picture:
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
-    return Picture(None)
+    image = []
+    for i in range(len(self.img)):
+        line = ""
+        """ Si el caracter no está vacío, entonces se agrega a line el caracter
+            de p, caso contrario se agrega el caracter de self a line"""
+        for j in range(len(self.img[i])):
+            if p.img[i][j] != " ":
+                line += p.img[i][j]
+            else:
+                line += self.img[i][j]
+        image.append(line)
+    return Picture(image)
   
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
