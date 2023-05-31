@@ -32,3 +32,12 @@ rockSquareN = squareN.under(rock)
 knightSquareN = squareN.under(knight)
 bishopSquareN = squareN.under(bishop)
 peonSquareN = squareN.under(pawn)
+
+#Reyes y reinas en sus respectivos cuadrados
+kingNSquare = square.under(kingN)
+kingSquare = squareN.under(king)
+queenNSquare = squareN.under(queenN)
+queenSquare = square.under(queen)
+
+
+
