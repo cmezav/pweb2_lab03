@@ -43,5 +43,6 @@ fila1 = rockNsquare.join(knightNsquareN).join(bishopNsquare).join(queenNSquare).
 fila2 = (peonNsquareN.join(peonNsquare)).horizontalRepeat(4)
 
 centro1 = square.join(squareN).horizontalRepeat(4)
+centro2 = centro1.verticalMirror()
 
-draw(fila1.up(fila2).up(centro1))
+draw(fila1.up(fila2).up(centro1).up(centro2))
