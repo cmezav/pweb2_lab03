@@ -46,4 +46,6 @@ centro1 = square.join(squareN).horizontalRepeat(4)
 centro2 = centro1.verticalMirror()
 centro = centro1.up(centro2).verticalRepeat(2)
 
-draw(fila1.up(fila2).up(centro))
+fila4 = (peonSquare.join(peonSquareN)).horizontalRepeat(4)
+
+draw(fila1.up(fila2).up(centro).up(fila4))
